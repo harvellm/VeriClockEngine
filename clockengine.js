@@ -13,7 +13,9 @@ var ClockEngine = /** @class */ (function () {
             var secPos = (sec * 360) / 60;
             var displayDay = date.getDate();
             var displayWeekday = date.toLocaleString(_this.locale, { weekday: "long" });
-            var displayMonth = date.toLocaleString(_this.locale, { month: "short" }).toUpperCase();
+            var displayMonth = date
+                .toLocaleString(_this.locale, { month: "short" })
+                .toUpperCase();
             return {
                 hrPosition: hrPos,
                 minPosition: minPos,
