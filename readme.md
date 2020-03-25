@@ -4,8 +4,9 @@ Clone this repository or just download the clockengine.js.  You do not need to h
 
 You will need to create an HTML file to hold your solution but that is probably clear now.  After that, here is the code that I am using in my final clock solution to call and process the results from this clock engine.
 
-```   
-    <script type="text/javascript" src="clockengine.js"></script>
+```javascript
+   
+   <script type="text/javascript" src="clockengine.js"></script>
     <script type="text/javascript">
         /*
             The following is simply an example for the purposes of testing the setSpecificTime() method of the ClockEngine - it is not necessary
@@ -50,4 +51,5 @@ You will need to create an HTML file to hold your solution but that is probably 
         //This is a pure Javascript method of guaranteeing that the code starts to run after the DOM is loaded in different browsers
         (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ?
             clockModule.startCallback() : document.addEventListener("DOMContentLoaded", clockModule.startCallback));
-    </script>```
+    </script>
+    ```
